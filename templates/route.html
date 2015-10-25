@@ -1,0 +1,55 @@
+
+<div class="grid-block">
+  <div class="grid-content">
+    <h1>Bike Route</h1>
+    <hr>
+    <p>
+      <img class="show-for-medium" src="assets/img/your-trail.jpg">
+      <iframe class="show-for-small-only" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13213.303392438971!2d-118.35123519999999!3d34.11240684999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bee34e0c488f%3A0x8ee8f604f42b3f03!2sRunyon+Canyon+Park!5e0!3m2!1sen!2sus!4v1437067495757" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+    </p>
+    <p>North West Portland is one of the most popular biking destination in Portland and one of best
+       Rides in PDX. This 20 mile bike route is in north-west Portland. Mountains, providing bikers with a few overlapping loops and great views over Portland.</p>
+
+    <div zf-action-sheet="">
+      <div zf-as-button="" title="Share Route"></div>
+      <div zf-as-content="" position="bottom">
+        <p>Tap to share</p>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Mail</a></li>
+        </ul>
+      </div>
+   </div>
+
+    <ul class="no-bullet route-details">
+      <li><strong>Location:</strong> Portland, OR</li>
+      <li><strong>Length:</strong> 20 miles</li>
+      <li><strong>Activities:</strong> Road Biking</li>
+      <li>
+        <strong>Rating:</strong>
+        <img zf-iconic="" icon="star" size="small" class="iconic-color-warning">
+        <img zf-iconic="" icon="star" size="small" class="iconic-color-warning">
+        <img zf-iconic="" icon="star" size="small" class="iconic-color-warning">
+        <img zf-iconic="" icon="star" size="small" class="iconic-color-secondary">
+        <img zf-iconic="" icon="star" size="small" class="iconic-color-secondary">
+      </li>
+    </ul>
+
+    <h3 class="float-left">Route Reviews</h3>
+    <a class="button medium success float-right" href="#" zf-open="reviewForm"><img zf-iconic="" icon="comment-square" size="small">Add Review</a>
+    <hr>
+
+    <div class="card">
+      <div class="card-divider">
+        Review by <strong>Micah Courey</strong>
+    </div>
+      <div class="card-section">
+        <p>This Route is great!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- include review form modal -->
+<div ng-include="'partials/add-review.html'"></div>

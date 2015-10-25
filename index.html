@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BikePDX</title>
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </head>
+  <body>
+    <div class="grid-frame vertical">
+      <div class="grid-block shrink wrap" style="padding: 0;">
+
+        <div class="grid-content collapse small-12 medium-5">
+          <ul class="primary menu-bar">
+            <li ui-sref-active="is-active"><a ui-sref="home"><strong><img zf-iconic="" icon="bike" size="small" class="float-left"> BikePDX</strong></a></li>
+          </ul>
+        </div>
+        <div class="grid-content collapse small-12 medium-7">
+          <ul class="primary menu-bar">
+            <li ui-sref-active="is-active"><a ui-sref="add-routes">Add Routes</a></li>
+            <li ui-sref-active="is-active"><a ui-sref="about">About</a></li>
+            <li ui-sref-active="is-active"><a ui-sref="contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="grid-block">
+        <div class="grid-block show-for-medium medium-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89501.67405889329!2d-122.79455976708641!3d45.4914084271709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b0b7da97427%3A0x1c36b9e6f6d18591!2sPortland%2C+OR!5e0!3m2!1sen!2sus!4v1445801765125" width="100%" height="1000" frameborder="0" style="border:0"></iframe>
+        </div>
+        <div ui-view class="grid-content"></div>
+        <zf-notification-static id="trail-notify" title="New Trail" position="bottom-left">
+          <p>We've added your trail to our list thanks</p>
+        </zf-notification-static>
+      </div>
+    </div>
+  </body>
+</html>
