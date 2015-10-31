@@ -6400,7 +6400,7 @@ blockquote p {
   float: none; }
 
 .main-search {
-  background: url("../img/home-bg.jpg");
+  background: url("../img/portland-home.jpg");
   background-size: cover;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -6413,9 +6413,34 @@ blockquote p {
 .lead {
     color: white; }
 
+body {
+  background-color: #EAEAEA; }
+
 .top-margin {
   margin-top: 2%; }
 
 .route-details strong {
   width: 80px;
   display: inline-block; }
+
+.menu-bar {
+  background-color: #0D3824; }
+
+.menu-bar .is-active > a {
+  background-color: #0A8754; }
+
+.menu-bar > li > a:hover {
+  background: #0A8754;
+  color: #000; }
+
+.button {
+  background-color: #0A8754; }
+
+.button:hover {
+  background-color: #0D3824; }
+
+.search {
+  background-color: #EAEAEA; }
+
+.menu-bar > li > a {
+  color: #EAEAEA; }
